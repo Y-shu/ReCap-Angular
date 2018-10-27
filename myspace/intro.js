@@ -1,0 +1,12 @@
+var message;
+message = "Hello Good Morning";
+console.log(message);
+var value;
+value = 1234;
+console.log(value);
+var bool;
+bool = true;
+console.log(bool);
+var tuple;
+tuple = ['Yashu', 26, 'Good Girl'];
+console.log(tuple);
