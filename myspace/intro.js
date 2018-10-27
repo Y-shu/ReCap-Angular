@@ -10,3 +10,38 @@ console.log(bool);
 var tuple;
 tuple = ['Yashu', 26, 'Good Girl'];
 console.log(tuple);
+var mymessage = "Hey! " + message + " lets count " + value + " and its " + bool + "\n                        that we live once! Welcome " + tuple + "!!!";
+console.log(mymessage);
+var list = [1, 2, 3, 4];
+console.log(list);
+var listValue = ['Yashu', 'Hema', 'Ram'];
+console.log(listValue);
+var t;
+t = ["yashu", 12792];
+console.log(t);
+console.log(t[1]);
+var color;
+(function (color) {
+    color[color["RED"] = 0] = "RED";
+    color[color["GREEN"] = 1] = "GREEN";
+    color[color["YELLOW"] = 2] = "YELLOW";
+    color[color["BLUE"] = 3] = "BLUE";
+})(color || (color = {}));
+console.log(color);
+var c = color.GREEN;
+console.log(c);
+var color1;
+(function (color1) {
+    color1[color1["RED"] = 123] = "RED";
+    color1[color1["GREEN"] = 124] = "GREEN";
+    color1[color1["YELLOW"] = 125] = "YELLOW";
+    color1[color1["BLUE"] = 126] = "BLUE";
+})(color1 || (color1 = {}));
+console.log(color1);
+//type assertion 
+var someValue = "Hey Hello!";
+var someNum = someValue.length;
+console.log(someNum);
+var num = 1234;
+var message1 = "lets Count " + num + "! hahaha!";
+console.log(message1);
