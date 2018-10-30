@@ -1,8 +1,8 @@
-// interface Property{
-//     property:string;
-//     propertyValue:number;
+interface Property{
+    propertyName:string;
+    propertyValue:number;
 
-// }
+}
 abstract class Father{
     name?:string;
     age?:number;
@@ -12,7 +12,7 @@ abstract class Father{
         this.age=age;
         // this.father_property=father_property;
      }
-     showFatherDetails():void{
+     showFatherDetails():any{
          console.log(`My Father : ${this.name} and his age is ${this.age} 
                     `);
          
@@ -26,17 +26,23 @@ abstract class Father{
  class Son extends Father{
     son_Name:string;
     son_Age:number;
-    constructor(name:string,age:number,son_Name:string,son_Age:number){
+    property:Property;
+    constructor(name:string,age:number,son_Name:string,son_Age:number,property?:Property){
          super(name,age)
+         this.property = property;
     }
     showProperty():void{
         console.log(`Property:
-        ${this.name} is my father and he is ${this.age} years old!`);
+        Having 
+        ${this.property.propertyName} propery and it's value is ${this.property.propertyValue}!`);
         
     }
 
  
 }
-let son = new Son("Hema Sundar",55,"Sandeep",29);
+let son = new Son("Hema Sundar",55,"Sandeep",29,{
+    propertyName:"Bella-Vista",
+    propertyValue:100000
+});
 son.showFatherDetails();
 son.showProperty();
