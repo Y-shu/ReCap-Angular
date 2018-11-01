@@ -1,0 +1,9 @@
+h1{
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.spec{
+    border: 2px solid green;
+    padding: 10px;
+    margin:20px;
+}
