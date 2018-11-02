@@ -1,3 +1,18 @@
-<p>
-  home works!
-</p>
+<section class="spec">
+<h1>{{app}}</h1>
+<h1>{{showApp()}}</h1>
+<h1 [innerText]='app'></h1>
+<input type="text" name="email" id="email" [value]="email">
+<ul>
+<li [innerText]='pizza[0].name'></li>
+<li [innerText]='pizza[1].name'></li>
+<li [innerText]='pizza[2].name'></li>
+</ul>
+<ul>
+<li *ngFor='let p of pizza'>{{p.name}}</li>
+</ul>
+<input type="text" #data name="data" (click)='getData(data)' > 
+<input type="text" name="username" (click)='changeUserName($event)' > 
+
+
+</section>

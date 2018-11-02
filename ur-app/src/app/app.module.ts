@@ -13,6 +13,8 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PropertiesComponent } from './properties/properties.component';
+
 
 
 @NgModule({
@@ -22,7 +24,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HeaderComponent, FooterComponent,
     LoginComponent, RegisterComponent,
     HomeComponent, NavigationComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    PropertiesComponent,
   ],
   imports: [
     BrowserModule,
