@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {FormsModule} from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -14,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { PropertiesComponent } from './properties/properties.component';
+import { PizzaService } from './services/pizza.service';
 
 
 
@@ -30,9 +32,10 @@ import { PropertiesComponent } from './properties/properties.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule
 
   ],
-  providers: [],
+  providers: [PizzaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

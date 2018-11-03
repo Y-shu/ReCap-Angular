@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {PizzaService} from '../services/pizza.service';
 
 @Component({
   selector: 'app-home',
@@ -8,17 +9,24 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   app: string = 'Learning ANGULAR!';
   email:string = 'Yashu@gmail.com';
-  pizza = [{
-    name:"Cheesa Pizza",
-    size:"M"
-  },{
-    name:"Chilly Pizza",
-    size:"L"
-  },{
-    name:"Chilly Cheesa Pizza",
-    size:"XL"
-  }]
-  constructor() { }
+  data1:string="Hello You!"
+    //instatiating PizzaService class
+    // pizza = new PizzaService();
+    // data= this.pizza.getPizza();
+  // pizza = [{
+  //   name:"Cheesa Pizza",
+  //   size:"M"
+  // },{
+  //   name:"Chilly Pizza",
+  //   size:"L"
+  // },{
+  //   name:"Chilly Cheesa Pizza",
+  //   size:"XL"
+  // }]
+  data=[];
+  constructor(public pizzaSrv:PizzaService) { 
+    this.data=pizzaSrv.getPizza();
+  }
 
   ngOnInit() {
   }
@@ -34,5 +42,11 @@ export class HomeComponent implements OnInit {
 
      
    }
+   changeData(value){
+     this.data1=value;
+     console.log(this.data1);
+     
+   }
+ 
 
 }
