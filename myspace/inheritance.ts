@@ -7,7 +7,7 @@ class Company{
         this.cName = cName;
         this.cAddress = cAddress;
     }
-    getDetails():void{
+     getDetails():void{
         console.log(`${this.cName} & ${this.cAddress}`)
     }
    

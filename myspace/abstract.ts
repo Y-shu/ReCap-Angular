@@ -19,6 +19,8 @@ abstract class Father{
      }
 
     abstract showProperty():void;
+        
+    
     // abstract getProperty():Property;
 
 

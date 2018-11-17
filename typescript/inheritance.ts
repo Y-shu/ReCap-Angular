@@ -19,6 +19,13 @@ constructor(public name:string,private company:string,
 class TwoWheeler extends Vehicle{
     public color : string;
     public speed :number;
+    constructor(color?:string,speed?:number,){
+        
+        //super call instantiate super class
+        super("TATA","TATA",200000,20)
+        this.color = color;
+        this.speed = speed;
+    }
     public runs():string{
         return this.speed + "km/hr";
     }
@@ -38,7 +45,7 @@ class FourWheeler extends Vehicle{
         return this.discount;
     }
 }
-let twoWheeler = new TwoWheeler("TATA","TATA",200000,20);
+let twoWheeler = new TwoWheeler();
 twoWheeler.getVehicleDetails();
 twoWheeler.speed=200;
 // twoWheeler.runs();

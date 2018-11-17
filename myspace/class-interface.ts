@@ -2,6 +2,7 @@ class Color{
     color1:string;
     color2:string;
 }
+//inheritance
 interface Paint extends Color{
     color3:string;
 }

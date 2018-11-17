@@ -8,6 +8,6 @@ class Pinky{
 }
 let pinky = new Pinky();
 pinky.showDetails();
-
+//we cannot create multiple objects without using constructor inside class
 let pinky1 = new Pinky();
 pinky1.showDetails();
